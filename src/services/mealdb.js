@@ -1,5 +1,6 @@
+const API_KEY = import.meta.env.VITE_MEALDB_API_KEY || "1";
 
-const API_BASE_URL = "https://www.themealdb.com/api/json/v1/1";
+const API_BASE_URL = `https://www.themealdb.com/api/json/v1/${API_KEY}`;
 
 // Reusable function for sending API requests
 async function fetchAPI(endpoint) {
